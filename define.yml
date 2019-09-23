@@ -1,0 +1,9 @@
+---
+
+- hosts: localhost
+  vars:
+    test: test 
+  tasks:
+    - name: define
+      debug: msg="Hi it's define {{ test  }}"
+      when: test is defined
